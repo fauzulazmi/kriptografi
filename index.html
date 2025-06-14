@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hill Cipher Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Hill Cipher 2x2 (mod 256) - Web Version</h2>
+
+  <input type="file" id="fileInput"><br><br>
+  <input type="number" id="k0" placeholder="k0 (0–255)" min="0" max="255">
+  <input type="number" id="k1" placeholder="k1 (0–255)" min="0" max="255"><br>
+  <input type="number" id="k2" placeholder="k2 (0–255)" min="0" max="255">
+  <input type="number" id="k3" placeholder="k3 (0–255)" min="0" max="255"><br><br>
+
+  <button onclick="handle('encrypt')">Enkripsi</button>
+  <button onclick="handle('decrypt')">Dekripsi</button>
+
+  <p id="status"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
